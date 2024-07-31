@@ -9,7 +9,7 @@ export default function Chats() {
 
   useEffect(() =>{
     setChatData(Data)
-  })
+  },[])
 
   return (
     <View style={styles.container}>

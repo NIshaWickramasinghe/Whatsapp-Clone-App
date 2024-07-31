@@ -3,7 +3,9 @@ import { Text , StyleSheet, View} from 'react-native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
 
-import {MaterialCommunityIcons} from 'react-native-vector-icons';
+// import {MaterialCommunityIcons} from 'react-native-vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import Chats from '../screen/Chats';
 import Calls from '../screen/Calls';
 import Status from '../screen/Status';
@@ -38,6 +40,7 @@ export default function Navigation() {
               <MaterialCommunityIcons name='account-group' size={24} color={color} />
             },
             tabBarLabelStyle : styles.tabBarLabel
+          
           }}
       />
       <Tab.Screen 
